@@ -1,15 +1,12 @@
 # SREGym Incident Replay Gate
 
-SREGym Incident Replay Gate is a hosted remote MCP for SREGym.
+SREGym Incident Replay Gate is a paid hosted remote MCP for SREGym. It exposes Streamable HTTP tool calls, bearer-token access, public server-card metadata, usage logs, and receipt-oriented JSON for AI agent workflows.
 
 Website: https://sregymgate.clauxel.com/
-Docs pattern reference: https://github.com/clauxel/MiroFish
-Primary keyword: SREGym
-Type: MCP
-Default plan: team
 MCP endpoint: https://sregymgate.clauxel.com/mcp
 Server card: https://sregymgate.clauxel.com/server-card.json
-Registry name: com.clauxel.sregymgate/sregymgate-mcp
-Tools: run_incident_replay, score_sre_agent, export_incident_verdict, compare_runbook_versions
+Docs: https://github.com/clauxel/sregym-incident-replay-gate-mcp
 
-Public boundary: docs-only repository; no production source code or secrets.
+Use case: Prove your SRE agent can resolve incidents before production.
+Authentication: Bearer token required for production use.
+Tools: run_incident_replay, score_sre_agent, export_incident_verdict, compare_runbook_versions
