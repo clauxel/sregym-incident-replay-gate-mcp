@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.clauxel.sregymgate/sregymgate-mcp",
+  "description": "SREGym Incident Replay Gate is a hosted remote MCP for SREGym.",
+  "version": "1.0.0",
+  "website_url": "https://sregymgate.clauxel.com/",
+  "repository": {
+    "url": "https://github.com/clauxel/sregym-incident-replay-gate-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sregymgate.clauxel.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token from the product website.",
+          "is_required": true,
+          "is_secret": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "title": "SREGym Incident Replay Gate MCP",
+      "server_card_url": "https://sregymgate.clauxel.com/server-card.json"
+    }
+  }
+}
